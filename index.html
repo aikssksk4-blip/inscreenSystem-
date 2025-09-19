@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>vamdz🥝🥝</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      color: #ff3333;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 12px;
+      width: 250px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      margin: 10px 0;
+      text-align: center;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      background: #ff3333;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff5555;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.ibb.co/YWpYpCt/itachi-icon.png" alt="Itachi Icon" class="logo">
+  <h1>vamdz🥝🥝</h1>
+  <p>Nhập key để tiếp tục:</p>
+  <input type="password" id="keyInput" placeholder="Nhập key...">
+  <br>
+  <button onclick="checkKey()">Xác nhận</button>
+  <p class="note">Key mặc định: <b>qthinhdz</b></p>
+
+  <script>
+    function checkKey() {
+      const key = document.getElementById('keyInput').value;
+      if (key === "qthinhdz") {
+        alert("Key đúng ✅ Truy cập thành công!");
+        // 👉 Nếu muốn chuyển trang, thay link dưới đây:
+        // window.location.href = "https://google.com";
+      } else {
+        alert("Sai key ❌ Vui lòng thử lại!");
+      }
+    }
+  </script>
+</body>
+</html>
